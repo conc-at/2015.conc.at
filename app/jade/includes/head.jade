@@ -1,0 +1,14 @@
+head
+  meta(charset='utf-8')
+  block title
+    title conc.at
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width')
+  link(rel='shortcut icon', href='/favicon.ico')
+  // build:css styles/vendor.css
+  include ../../bower-styles.jade
+  // endbuild
+  // build:css(.tmp) styles/main.css
+  link(rel='stylesheet', href='styles/main.css')
+  block styles
+  // endbuild

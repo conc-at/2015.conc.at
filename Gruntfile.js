@@ -35,15 +35,16 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/styles/**/*.less'],
         tasks: ['less:styles', 'autoprefixer']
       },
-      css: {
-        files: ['.tmp/styles/**/*.css']
+      jade: {
+        files: ['<%= config.app %>/**/*.jade'],
+        tasks: ['jade:build']
       },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= config.app %>/**/*.html',
+          '.tmp/**/*.html',
           '.tmp/styles/**/*.css',
           '<%= config.app %>/images/**/*'
         ]
@@ -118,7 +119,7 @@ module.exports = function (grunt) {
 
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html']
+        src: ['<%= config.app %>/bower-*.jade']
       }
     },
 
@@ -129,8 +130,8 @@ module.exports = function (grunt) {
             '<%= config.dist %>/scripts/**/*.js',
             '<%= config.dist %>/styles/**/*.css',
             '<%= config.dist %>/images/**/*.*',
-            '<%= config.dist %>/styles/fonts/**/*.*',
-            '<%= config.dist %>/*.{ico,png}'
+            '<%= config.dist %>/fonts/**/*.*',
+            '<%= config.dist %>/*.{ico,png}',
           ]
         }
       }
@@ -140,7 +141,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: '<%= config.dist %>/index.html'
     },
 
     usemin: {
@@ -206,7 +207,6 @@ module.exports = function (grunt) {
             '.nojekyll',
             '*.{ico,png,txt}',
             'images/**/*.webp',
-            '**/*.html',
             'styles/fonts/**/*.*'
           ]
         }, {
@@ -232,9 +232,24 @@ module.exports = function (grunt) {
       }
     },
 
+    jade: {
+      options: {
+        pretty: true
+      },
+      build: {
+        src: '<%= config.app %>/index.jade',
+        dest: '.tmp/index.html'
+      },
+      dist: {
+        src: '<%= config.app %>/index.jade',
+        dest: '<%= config.dist %>/index.html'
+      }
+    },
+
     concurrent: {
       server: [
-        'less:styles'
+        'less:styles',
+        'jade:build'
       ],
       dist: [
         'less:styles',
@@ -276,6 +291,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'jade:dist',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

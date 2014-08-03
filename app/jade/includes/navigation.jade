@@ -1,0 +1,29 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll(href='#page-top')
+        i.fa.fa-paw
+        | .concat()
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        block navlinks
+          li.hidden
+            a(href='#page-top')
+          li
+            a.page-scroll(href='#speakers') Speakers
+          li
+            a.page-scroll(href='#calendar') Calendar
+          li
+            a.page-scroll(href='#tickets') Tickets
+          li
+            a.page-scroll(href='#coc') Code of Conduct
+          li
+            a.page-scroll(href='#team') Team
+          li
+            a.page-scroll(href='#sponsors') Sponsors
