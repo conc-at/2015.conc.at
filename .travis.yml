@@ -1,0 +1,14 @@
+before_install:
+- npm install -g grunt-cli
+language: node_js
+node_js:
+- '0.10'
+notifications:
+  email: false
+  slack:
+    secure: P5ZwkrMDoBji2gk5eyH4YkK25a/damMA+TaR8hn4P30cqvSflQ1ayTMAGxHSY1t/FXqBRh5b642e62y8kB2yApFMdhUMVJMN5yk0sF/NPswqUBbJUC8YUM7mAdd69NOKX4maMVz3LWY2HX5mLdbqkJ+xKpuJ8pOF2lUHQOxnvSo=
+after_success:
+- grunt gh-pages
+env:
+  global:
+    secure: DHCSZbJ3jYCOIRD7RmcEpqsLJwfDskcDe7AAeN9lELKIJiYKLHKL+H8lZuugPENU86ODcHQIkt94elNq41jpST2FtVvfzqNWbqWf9HvOzY8Lq8lAW8U7DjBZ3q5v68RjKD9QhvYRuAa1DsAqZjGgvsmcbfHUKMaMd017HWMBZ+M=
