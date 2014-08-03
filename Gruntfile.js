@@ -31,9 +31,12 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
-      styles: {
-        files: ['<%= config.app %>/styles/**/*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+      less: {
+        files: ['<%= config.app %>/styles/**/*.less'],
+        tasks: ['less:styles', 'autoprefixer']
+      },
+      css: {
+        files: ['.tmp/styles/**/*.css']
       },
       livereload: {
         options: {
@@ -211,26 +214,22 @@ module.exports = function (grunt) {
           src: ['fonts/*.*'],
           dest: '<%= config.dist %>'
         }]
-      },
-      styles: {
-        expand: true,
-        dot: true,
-        cwd: '<%= config.app %>/styles',
-        dest: '.tmp/styles/',
-        src: '**/*.css'
       }
     },
 
-    // Run some tasks in parallel to speed up build process
+    less: {
+      styles: {
+        src: '<%= config.app %>/styles/main.less',
+        dest: '.tmp/styles/main.css'
+      }
+    },
+
     concurrent: {
       server: [
-        'copy:styles'
-      ],
-      test: [
-        'copy:styles'
+        'less:styles'
       ],
       dist: [
-        'copy:styles',
+        'less:styles',
         'imagemin',
         'svgmin'
       ]
