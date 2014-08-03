@@ -168,23 +168,24 @@ header {
 	background-position: center center;
 	.background-cover;
 	text-align: center;
-	color: white;
-	.intro-text {
-		padding-top: 100px;
-		padding-bottom: 50px;
-		.intro-lead-in {
-			.serif-font;
-			font-style: italic;
-			font-size: 22px;
-			line-height: 22px;
-			margin-bottom: 25px;
-		}
-		.intro-heading {
-			.heading-font;
-			font-weight: 700;
-			font-size: 50px;
-			line-height: 50px;
-			margin-bottom: 25px;
+	color: @gray-darkest;
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .intro-lead-in {
+      .serif-font;
+      font-style: italic;
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 25px;
+    }
+    .intro-heading {
+      .heading-font;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 25px;
+      text-shadow: 0px 0px 100px fade(white, 80%), 0px 0px 20px white;
 		}
 	}
 }
@@ -246,7 +247,7 @@ section {
 
 // Portfolio Section
 
-#portfolio {
+#speakers {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
