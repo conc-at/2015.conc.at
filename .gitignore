@@ -1,4 +1,12 @@
+# IDE
+/.idea
+
+# node
 node_modules
+
+# bower
+bower_components
+
+# build
 dist
 .tmp
-bower_components
