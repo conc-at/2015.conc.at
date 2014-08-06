@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: @gray-darkest;
 	border-color: transparent;
 	.navbar-brand {
+    visibility: hidden;
 		color: @brand-primary;
 		.script-font;
         &:hover,
@@ -132,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 		color: white;
 		background-color: darken(@brand-primary, 10%);
 	}
+}
+
+.navbar-shrink .navbar-brand {
+  visibility: visible;
 }
 
 @media(min-width:768px) {
@@ -189,6 +194,13 @@ header {
       text-shadow: 0px 0px 100px @gray-darkest, 0px 0px 20px @gray-darkest;
     }
 	}
+  .logo {
+    color: #c50202;
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    text-transform: lowercase;
+    display: inline-block;
+    margin: 10px 0;
+  }
 }
 
 @media(min-width:768px) {
