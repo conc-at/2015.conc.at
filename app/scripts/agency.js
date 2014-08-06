@@ -25,3 +25,10 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
   $('.navbar-toggle:visible').click();
 });
+
+window.addEventListener('updateready', window.location.reload);
+
+if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+  window.location.reload();
+}
+

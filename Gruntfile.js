@@ -280,6 +280,23 @@ module.exports = function (grunt) {
         siteRoot: '<%= config.dist %>',
         homepage: 'https://conc.at'
       }
+    },
+
+    manifest: {
+      options: {
+        basePath: '<%= config.dist %>',
+        preferOnline: true,
+        verbose: false,
+      },
+      dist: {
+        src: [
+          'fonts/**/*',
+          'images/**/*',
+          'scripts/**/*',
+          'styles/**/*'
+        ],
+        dest: '<%= config.dist %>/manifest.appcache'
+      }
     }
   });
 
@@ -311,7 +328,8 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin',
-    'sitemap'
+    'sitemap',
+    'manifest'
   ]);
 
   grunt.registerTask('default', [

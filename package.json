@@ -18,6 +18,7 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-gh-pages": "^0.9.1",
+    "grunt-manifest": "^0.4.0",
     "grunt-newer": "^0.7.0",
     "grunt-rev": "^0.1.0",
     "grunt-sitemap": "^1.1.0",
