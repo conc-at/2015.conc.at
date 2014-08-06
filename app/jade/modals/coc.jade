@@ -1,0 +1,16 @@
+#cocModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-content
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Code of Conduct
+            p.item-intro.text-muted 
+              | tl;dr Don’t be a Jerk. Be excellent.
+            include:markdown coc.md
+            button.btn.btn-primary(type='button', data-dismiss='modal')
+              i.fa.fa-times
+              | &nbsp; Close Modal

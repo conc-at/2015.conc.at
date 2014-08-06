@@ -36,7 +36,7 @@ module.exports = function (grunt) {
         tasks: ['less:styles', 'autoprefixer']
       },
       jade: {
-        files: ['<%= config.app %>/**/*.jade'],
+        files: ['<%= config.app %>/**/*.{jade,md}'],
         tasks: ['jade:build']
       },
       livereload: {
