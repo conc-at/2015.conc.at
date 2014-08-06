@@ -205,6 +205,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             'CNAME',
+            '.htaccess',
             '.nojekyll',
             'google*.html',
             '*.{ico,png,txt}',
