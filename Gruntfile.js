@@ -206,6 +206,7 @@ module.exports = function (grunt) {
           src: [
             'CNAME',
             '.nojekyll',
+            'google*.html',
             '*.{ico,png,txt}',
             'images/**/*.webp',
             'styles/fonts/**/*.*'
