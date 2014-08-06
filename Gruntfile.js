@@ -290,10 +290,10 @@ module.exports = function (grunt) {
       },
       dist: {
         src: [
-          'fonts/**/*',
-          'images/**/*',
-          'scripts/**/*',
-          'styles/**/*'
+          'fonts/**/*.*',
+          'images/**/*.*',
+          'scripts/**/*.*',
+          'styles/**/*.*'
         ],
         dest: '<%= config.dist %>/manifest.appcache'
       }
