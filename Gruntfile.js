@@ -273,6 +273,13 @@ module.exports = function (grunt) {
         }
       },
       src: '**/*'
+    },
+
+    sitemap: {
+      dist: {
+        siteRoot: '<%= config.dist %>',
+        homepage: 'https://conc.at'
+      }
     }
   });
 
