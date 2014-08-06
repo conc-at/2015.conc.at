@@ -130,6 +130,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/scripts/**/*.js',
             '<%= config.dist %>/styles/**/*.css',
             '<%= config.dist %>/images/**/*.*',
+            '!<%= config.dist %>/images/*/*@2x.*',
             '<%= config.dist %>/fonts/**/*.*',
             '<%= config.dist %>/*.{ico,png}',
           ]
