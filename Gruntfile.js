@@ -261,21 +261,6 @@ module.exports = function (grunt) {
       ]
     },
 
-    'gh-pages': {
-      options: {
-        base: 'dist',
-        branch: 'master',
-        dotfiles: true,
-        repo: 'https://' + process.env.GH_TOKEN + '@github.com/conc-at/conc-at.github.io',
-        message: 'chore(deploy): latest build',
-        user: {
-          name: 'Stephan Bönnemann',
-          email: 'stephan@boennemann.me'
-        }
-      },
-      src: '**/*'
-    },
-
     sitemap: {
       dist: {
         siteRoot: '<%= config.dist %>',
