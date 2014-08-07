@@ -22,6 +22,7 @@
     "grunt-rev": "^0.1.0",
     "grunt-sitemap": "^1.1.0",
     "grunt-svgmin": "^0.4.0",
+    "grunt-uncss": "^0.3.5",
     "grunt-usemin": "^2.1.0",
     "grunt-wiredep": "^1.8.0",
     "jshint-stylish": "^0.4.0",

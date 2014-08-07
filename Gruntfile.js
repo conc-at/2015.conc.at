@@ -112,7 +112,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.tmp/styles/',
           src: '**/*.css',
-          dest: '.tmp/styles/'
+          dest: '<%= config.dist %>/styles/'
         }]
       }
     },
@@ -283,6 +283,37 @@ module.exports = function (grunt) {
         ],
         dest: '<%= config.dist %>/manifest.appcache'
       }
+    },
+
+    uncss: {
+      options: {
+        ignore: [
+          /fa/,
+          /btn/,
+          /modal/,
+          /footer/,
+          /\.team-member/,
+          /\.img\-circle/,
+          /\.list\-inline/,
+          /\.navbar\-shrink/,
+          /\.social\-buttons/
+        ]
+      },
+      dist: {
+        files: [{
+          src: '<%= config.dist %>/index.html',
+          dest: '<%= config.dist %>/styles/main.css'
+        }]
+      }
+    },
+
+    cssmin: {
+      dist: {
+        files: [{
+          src: '<%= config.dist %>/styles/main.css',
+          dest: '<%= config.dist %>/styles/main.css'
+        }]
+      }
     }
   });
 
@@ -308,9 +339,10 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'cssmin',
     'uglify',
     'copy:dist',
+    'uncss',
+    'cssmin:dist',
     'rev',
     'usemin',
     'htmlmin',
