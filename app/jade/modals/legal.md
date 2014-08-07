@@ -36,6 +36,8 @@ Für den Inhalt der Website verantwortlich:
 | Email     | [hannes.moser@fh-salzburg.ac.at](mailto:hannes.moser@fh-salzburg.ac.at)
 | Phone(AT) | [+436641563323](tel:00436641563323)
 
+<br>
+
 #### Haftungsausschluss
 
 Die Zusammenstellung der Informationen auf dieser Website wurde mit größtmöglicher Sorgfalt vorgenommen. Dennoch kann keinerlei Gewähr für Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen und Daten übernommen werden. Haftungsansprüche gegen die Fachhochschule Salzburg GmbH oder die Autoren bzw. Verantwortlichen dieser Website für Schäden materieller oder  immaterieller Art, die auf fehlerhaften oder unvollständigen Informationen und Daten beruhen, sind, soweit nicht Vorsatz oder grobe Fahrlässigkeit vorliegt, ausgeschlossen. Links zu anderen Webseiten wurden sorgfältig ausgewählt. Da die Fachhochschule Salzburg GmbH auf deren Inhalt keinen Einfluss hat, wird die Haftung, soweit rechtlich möglich, ausgeschlossen.
