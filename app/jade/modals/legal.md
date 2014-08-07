@@ -28,6 +28,12 @@ Für den Inhalt der Website verantwortlich:
 | Phone(AT) | [+4915142318681](tel:004915142318681)
 | Phone(DE) | [+436603936464](tel:00436603936464)
 
+| Contact   | Hannes Moser
+| :-------- | :-
+| Twitter   | [@eliias](https://twitter.com/eliias)
+| Email     | [hannes.moser@fh-salzburg.ac.at](mailto:hannes.moser@fh-salzburg.ac.at)
+| Phone(AT) | [+436641563323](tel:00436641563323)
+
 #### Haftungsausschluss
 
 Die Zusammenstellung der Informationen auf dieser Website wurde mit größtmöglicher Sorgfalt vorgenommen. Dennoch kann keinerlei Gewähr für Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen und Daten übernommen werden. Haftungsansprüche gegen die Fachhochschule Salzburg GmbH oder die Autoren bzw. Verantwortlichen dieser Website für Schäden materieller oder  immaterieller Art, die auf fehlerhaften oder unvollständigen Informationen und Daten beruhen, sind, soweit nicht Vorsatz oder grobe Fahrlässigkeit vorliegt, ausgeschlossen. Links zu anderen Webseiten wurden sorgfältig ausgewählt. Da die Fachhochschule Salzburg GmbH auf deren Inhalt keinen Einfluss hat, wird die Haftung, soweit rechtlich möglich, ausgeschlossen.
