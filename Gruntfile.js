@@ -119,7 +119,8 @@ module.exports = function (grunt) {
 
     wiredep: {
       app: {
-        src: ['<%= config.app %>/bower-*.jade']
+        src: ['<%= config.app %>/bower-*.jade'],
+        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
 
