@@ -1,12 +1,13 @@
-// build:js scripts/vendor.js
-include ../../bower-scripts
-// endbuild
 // build:js({app,.tmp}) scripts/main.js
-script(src='../bower_components/bootstrap/js/transition.js')
-script(src='../bower_components/bootstrap/js/modal.js')
-script(src='../bower_components/bootstrap/js/scrollspy.js')
-script(src='scripts/vendor/cbpAnimatedHeader.js')
-script(src='scripts/agency.js')
+script(defer, async, src='../bower_components/jquery/dist/jquery.js')
+script(defer, async, src='../bower_components/classie/classie.js')
+script(defer, async, src='../bower_components/jquery.easing/js/jquery.easing.min.js')
+script(defer, async, src='../bower_components/picturefill/dist/picturefill.js')
+script(defer, async, src='../bower_components/bootstrap/js/transition.js')
+script(defer, async, src='../bower_components/bootstrap/js/modal.js')
+script(defer, async, src='../bower_components/bootstrap/js/scrollspy.js')
+script(defer, async, src='scripts/vendor/cbpAnimatedHeader.js')
+script(defer, async, src='scripts/agency.js')
 // endbuild
 script.
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
