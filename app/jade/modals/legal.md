@@ -28,6 +28,8 @@ Für den Inhalt der Website verantwortlich:
 | Phone(AT) | [+4915142318681](tel:004915142318681)
 | Phone(DE) | [+436603936464](tel:00436603936464)
 
+<br>
+
 | Contact   | Hannes Moser
 | :-------- | :-
 | Twitter   | [@eliias](https://twitter.com/eliias)
