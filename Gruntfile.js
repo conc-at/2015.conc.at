@@ -318,6 +318,17 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>/styles/main.css'
         }]
       }
+    },
+
+    jsonmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>',
+          src: ['schemas/*.json'],
+          dest: '<%= config.dist %>'
+        }]
+      }
     }
   });
 
@@ -350,6 +361,7 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin',
+    'jsonmin',
     'sitemap',
     'manifest'
   ]);

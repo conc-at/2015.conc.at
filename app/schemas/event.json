@@ -1,0 +1,48 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": ".concat() 2015",
+  "alternateName": "concat",
+  "description": "the web development conference in Austria",
+  "url": "https://conc.at",
+  "startDate": "2015-03-07T09:00",
+  "location": {
+    "@type": "Place",
+    "name": "University of Applied Sciences Salzburg",
+    "address": "Urstein Süd 1, Puch bei Hallein, Salzburg, Austria",
+    "image": "/images/banner_1200.jpg"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Ticket",
+    "url": "https://ti.to/concat/2015"
+  },
+  "organizer": [
+    {
+      "@type": "Person",
+      "image": "/images/team/stephan.jpg",
+      "name": "Stephan Bönnemann",
+      "sameAs": "http://boennemann.me/"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/team/lena.jpg",
+      "name": "Hannes Moser",
+      "sameAs": "http://die.netzarchitekten.com/"
+    }
+  ],
+  "performer": [
+    {
+      "@type": "Person",
+      "image": "/images/speakers/lena_reinhard.jpg",
+      "name": "Lena Reinhardt",
+      "sameAs": "http://schoenaberselten.com/"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/speakers/eric_schoffstall.jpg",
+      "name": "Eric Schoffstall",
+      "sameAs": "http://contra.io/"
+    }
+  ]
+}
