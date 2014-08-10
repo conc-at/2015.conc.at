@@ -10,7 +10,6 @@
     "@type": "Place",
     "name": "University of Applied Sciences Salzburg",
     "address": "Urstein Süd 1, Puch bei Hallein, Salzburg, Austria",
-    "image": "/images/banner_1200.jpg"
   },
   "offers": {
     "@type": "Offer",
@@ -20,13 +19,13 @@
   "organizer": [
     {
       "@type": "Person",
-      "image": "/images/team/stephan.jpg",
+      "image": "/images/team/stephan@2x.jpg",
       "name": "Stephan Bönnemann",
       "sameAs": "http://boennemann.me/"
     },
     {
       "@type": "Person",
-      "image": "/images/team/lena.jpg",
+      "image": "/images/team/hannes@2x.jpg",
       "name": "Hannes Moser",
       "sameAs": "http://die.netzarchitekten.com/"
     }
@@ -34,19 +33,19 @@
   "performer": [
     {
       "@type": "Person",
-      "image": "/images/speakers/lena_reinhard.jpg",
+      "image": "/images/speakers/lena_reinhard@2x.jpg",
       "name": "Lena Reinhardt",
       "sameAs": "http://schoenaberselten.com/"
     },
     {
       "@type": "Person",
-      "image": "/images/speakers/eric_schoffstall.jpg",
+      "image": "/images/speakers/eric_schoffstall@2x.jpg",
       "name": "Eric Schoffstall",
       "sameAs": "http://contra.io/"
     },
     {
       "@type": "Person",
-      "image": "/images/speakers/karolina_szczur.jpg",
+      "image": "/images/speakers/karolina_szczur@2x.jpg",
       "name": "Karolina Szczur",
       "sameAs": "http://thefox.is/"
     }
