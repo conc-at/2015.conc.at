@@ -43,6 +43,12 @@
       "image": "/images/speakers/eric_schoffstall.jpg",
       "name": "Eric Schoffstall",
       "sameAs": "http://contra.io/"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/speakers/karolina_szczur.jpg",
+      "name": "Karolina Szczur",
+      "sameAs": "http://thefox.is/"
     }
   ]
 }
