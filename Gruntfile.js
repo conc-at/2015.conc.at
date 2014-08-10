@@ -291,12 +291,15 @@ module.exports = function (grunt) {
         ignore: [
           /fa/,
           /btn/,
+          /.in/,
+          /.out/,
           /modal/,
           /footer/,
           /\.team-member/,
           /\.img\-circle/,
           /\.list\-inline/,
           /\.navbar\-shrink/,
+          /collap/,
           /\.social\-buttons/
         ]
       },
