@@ -48,6 +48,11 @@
       "image": "/images/speakers/karolina_szczur@2x.jpg",
       "name": "Karolina Szczur",
       "sameAs": "http://thefox.is/"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/speakers/michele_guido@2x.jpg",
+      "name": "Michele Guido"
     }
   ]
 }
