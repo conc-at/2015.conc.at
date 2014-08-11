@@ -8,10 +8,11 @@
 'use strict';
 $(function() {
   $('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
+    var href = $(this).attr('href');
     $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
+      scrollTop: $(href).offset().top
     }, 1500, 'easeInOutExpo');
+    history.pushState({}, '', href);
     event.preventDefault();
   });
 });
