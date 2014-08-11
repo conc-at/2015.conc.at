@@ -293,6 +293,7 @@ module.exports = function (grunt) {
           /btn/,
           /.in/,
           /.out/,
+          /#map/,
           /modal/,
           /footer/,
           /\.team-member/,
