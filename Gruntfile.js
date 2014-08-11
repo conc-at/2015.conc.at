@@ -326,7 +326,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>',
-          src: ['schemas/*.json'],
+          src: ['schemas/*.jsonld'],
           dest: '<%= config.dist %>'
         }]
       }
