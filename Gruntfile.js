@@ -363,8 +363,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin',
     'jsonmin',
-    'sitemap',
-    'manifest'
+    'sitemap'
+    // 'manifest'
   ]);
 
   grunt.registerTask('default', [
