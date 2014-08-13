@@ -59,6 +59,11 @@
       "@type": "Person",
       "image": "/images/speakers/michele_guido@2x.jpg",
       "name": "Michele Guido"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/speakers/stephan_seidt@2x.jpg",
+      "name": "Stephan Seidt"
     }
   ]
 }
