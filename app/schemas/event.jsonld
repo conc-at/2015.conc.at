@@ -33,8 +33,14 @@
   "performer": [
     {
       "@type": "Person",
+      "image": "/images/speakers/douglas_crockford@2x.jpg",
+      "name": "Douglas Crockford",
+      "sameAs": "http://crockford.com/"
+    },
+    {
+      "@type": "Person",
       "image": "/images/speakers/lena_reinhard@2x.jpg",
-      "name": "Lena Reinhardt",
+      "name": "Lena Reinhard",
       "sameAs": "http://schoenaberselten.com/"
     },
     {
