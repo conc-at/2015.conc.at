@@ -64,6 +64,11 @@
       "@type": "Person",
       "image": "/images/speakers/stephan_seidt@2x.jpg",
       "name": "Stephan Seidt"
+    },
+    {
+      "@type": "Person",
+      "image": "/images/speakers/vitaly_friedman@2x.jpg",
+      "name": "Vitaly Friedman"
     }
   ]
 }
