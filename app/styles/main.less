@@ -102,10 +102,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: @gray-darkest;
     border-color: transparent;
     .navbar-brand {
-        color: @brand-primary;
+        padding-top: 0;
+        padding-bottom: 0;
         .transition(opacity 150ms);
         .opacity(0);
-        .script-font;
         &:hover,
         &:focus,
         &:active,
@@ -158,7 +158,19 @@ h1, h2, h3, h4, h5, h6 {
     .opacity(1);
 }
 
+.navbar-brand img {
+  width: 34px;
+  height: 34px;
+  margin-top: 8px;
+}
+
 @media (min-width: 768px) {
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      margin-top: 0;
+    }
+
     .navbar-default {
         background-color: transparent;
         padding: 25px 0;
@@ -216,7 +228,7 @@ header {
     }
     .logo {
         color: #c50202;
-        font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+        font-style: italic;
         text-transform: lowercase;
         display: inline-block;
         margin: 10px 0;
@@ -226,7 +238,7 @@ header {
 @media (min-width: 768px) {
     header {
         .intro-text {
-            padding-top: 300px;
+            padding-top: 220px;
             padding-bottom: 200px;
             .intro-lead-in {
                 .serif-font;
