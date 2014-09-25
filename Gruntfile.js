@@ -209,6 +209,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '.nojekyll',
             'google*.html',
+            'favicons/**/*.*',
             '*.{ico,png,txt}',
             'images/**/*.webp',
             'styles/fonts/**/*.*'
