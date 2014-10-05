@@ -1,3 +1,5 @@
+You may [contact us](mailto:contact@conc.at) anytime.
+
 ### Offenlegungspflicht gemäß § 25 MedienG und Informationspflicht gemäß E-Commerce-Gesetz
 
 <br>
