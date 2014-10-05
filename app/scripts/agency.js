@@ -1,11 +1,20 @@
+'use strict';
 /*!
  * Start Bootstrap - Agnecy Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+$(function() {
+  var hash = location.hash;
+  if (!/Modal$/.test(hash)) {
+    return;
+  }
+  $(hash).modal('show');
+});
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-'use strict';
 $(function() {
   $('a.page-scroll').bind('click', function(event) {
     var href = $(this).attr('href');
