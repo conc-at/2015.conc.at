@@ -18,7 +18,8 @@ section#team.bg-light-gray
             alt='Stephan Bönnemann'
           )
           h4 Stephan Bönnemann
-          p.text-muted excellenteasy
+          p.text-muted
+            a(href='http://excellenteasy.com') excellenteasy
           ul.list-inline.social-buttons
             li
               a(href='https://twitter.com/boennemann')
@@ -39,7 +40,8 @@ section#team.bg-light-gray
             alt='Hannes Moser'
           )
           h4 Hannes Moser
-          p.text-muted FH-Salzburg
+          p.text-muted
+            a(href='http://fh-salzburg.ac.at') University of Applied Sciences in Salzburg
           ul.list-inline.social-buttons
             li
               a(href='https://twitter.com/eliias')
@@ -50,7 +52,7 @@ section#team.bg-light-gray
             li
               a(href='http://die.netzarchitekten.com/')
                 i.fa.fa-globe
-    //- .row
-    //-   .col-lg-8.col-lg-offset-2.text-center
-    //-     p.large.text-muted
-    //-       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        p.text-muted
+          include:markdown fh.md
