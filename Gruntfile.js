@@ -294,6 +294,7 @@ module.exports = function (grunt) {
           /btn/,
           /.in/,
           /.out/,
+          /tito/,
           /#map/,
           /modal/,
           /footer/,
