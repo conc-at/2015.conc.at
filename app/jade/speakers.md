@@ -1,7 +1,7 @@
 We carefully selected our first seven speakers to show you in which direction we want the conference to go. There are **ten more 20min slots** *without Q&A session afterwards* so we invite you and the entire web development community to **propose a talk for .concat()**.
 
 This is a web development conference, so we want to hear talks about frontend and backend development, security, design, typography, accessibility, open source and our culture.
-But if you think our attendees will benefit from you hacking on robots or talking about [bacon](http://blip.tv/jsconf/aaron-quint-making-bacon-making-code-3853459) that’s totally fine as well. 
+But if you think our attendees will benefit from you hacking on robots or talking about [bacon](https://www.youtube.com/watch?v=tRVUKCQw7qU) that’s totally fine as well. 
 
 Just remember: We will always favor an original, outside of the box talk, or one that explains concepts and the bigger picture over a “A sucks, use B instead” talk. Get creative and surprise us.
 
