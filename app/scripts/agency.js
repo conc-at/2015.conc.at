@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 /*!
  * Start Bootstrap - Agnecy Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -18,20 +18,20 @@ $(function(){
   if(typeof window.FileReader === 'undefined') return
 
   var $drag = $('.dragzone')
+  $(document).on('dragover', $drag.addClass.bind($drag, 'drag'))
   $drag.on('dragover', $drag.removeClass.bind($drag, 'fa-plus'))
   $drag.on('dragleave ', $drag.addClass.bind($drag, 'fa-plus'))
 
   new DragDrop($drag[0], function (files) {
     var file = files.pop()
     $drag.addClass('dragged')
-    var reader = new FileReader();
+    var reader = new FileReader()
     reader.onload = function (event) {
       $('#newsponsor')
-        .append($('<img>').attr({
-          src: event.target.result,
-          width: '200',
-          height: 'auto'
-        }))
+        .html('')
+        .append($('<div>')
+          .css('background-image', 'url(' + event.target.result + ')')
+        )
         .show()
     }
     reader.readAsDataURL(file);
