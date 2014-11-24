@@ -24,8 +24,8 @@ In case you can’t find a staff member or want to contact us via email or phone
 | :-------- | :-
 | Twitter   | [@boennemann](https://twitter.com/boennemann)
 | Email     | [stephan@boennemann.me](mailto:stephan@boennemann.me)
-| Phone(AT) | [+4915142318681](tel:004915142318681)
-| Phone(DE) | [+436603936464](tel:00436603936464)
+| Phone(AT) | [+436603936464](tel:00436603936464)
+| Phone(DE) | [+4915142318681](tel:004915142318681)
 
 <br>
 
