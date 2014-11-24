@@ -298,6 +298,7 @@ module.exports = function (grunt) {
           /#map/,
           /modal/,
           /footer/,
+          /sponsor/,
           /\.team-member/,
           /\.img\-circle/,
           /\.list\-inline/,
