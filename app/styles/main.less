@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-brand {
         padding-top: 0;
         padding-bottom: 0;
-        .transition(opacity 150ms);
+        .transition(all 150ms);
         .opacity(0);
         &:hover,
         &:focus,
@@ -154,8 +154,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.navbar-brand {
+  transform: rotateY(90deg);
+}
+
 .navbar-shrink .navbar-brand {
     .opacity(1);
+    transform: rotateY(0);
 }
 
 .navbar-brand img {
