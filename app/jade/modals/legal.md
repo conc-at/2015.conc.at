@@ -11,7 +11,7 @@ You may [contact us](mailto:contact@conc.at) anytime.
 || Österreich |
 | Telefon | [+43-(0)50-2211-0](tel:00435022110) |
 | Fax | [+43-(0)50-2211-1099](fax:00435022111099) |
-| E-Mail | [press@fh-salzburg.ac.at](mailto:press@fh-salzburg.ac.at) |
+| E-Mail | [hannes.moser@fh-salzburg.ac.at](mailto:hannes.moser@fh-salzburg.ac.at) |
 | Web | [fh-salzburg.ac.at](http://www.fh-salzburg.ac.at) |
 | UID | ATU 44554503 |
 | Firmenbuchnummer | FN 166054y |
