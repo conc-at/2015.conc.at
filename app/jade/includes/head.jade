@@ -1,10 +1,10 @@
 head
   meta(charset='utf-8')
   block title
-    title .concat() – The web development conference in Salzburg, Austria
+    title .concat() web development conference
   meta(
     name='description', 
-    content='.concat() – the web development conference in Salzburg, Austria March 7th 2015'
+    content='The web development conference in Salzburg, Austria March 7th 2015'
   )
   meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
   link(rel='shortcut icon', href='/favicons/favicon.ico')
@@ -30,6 +30,31 @@ head
   link(rel='alternate', href='schemas/event.jsonld' type='application/ld+json')
   link(rel='publisher', href='https://plus.google.com/112255772257819861777')
   link(rel='shortcut icon', href='/favicon.ico')
+  
+  meta(itemprop='name', content='.concat() web development conference')
+  meta(itemprop='description', content='The web development conference in Salzburg, Austria March 7th 2015')
+  meta(itemprop='image', content='https://conc.at/images/people@2x.jpg')
+  // Twitter Card data
+  meta(name='twitter:card', content='product')
+  meta(name='twitter:site', content='@conc_at')
+  meta(name='twitter:title', content='.concat() web development conference')
+  meta(name='twitter:description', content='The web development conference in Salzburg, Austria March 7th 2015')
+  meta(name='twitter:creator', content='@conc_at')
+  meta(name='twitter:image', content='https://conc.at/images/people@2x.jpg')
+  meta(name='twitter:data1', content='125€')
+  meta(name='twitter:label1', content='Price')
+  meta(name='twitter:data2', content='Black')
+  meta(name='twitter:label2', content='Color')
+  // Open Graph data
+  meta(property='og:title', content='.concat() web development conference')
+  meta(property='og:type', content='article')
+  meta(property='og:url', content='https://conc.at/')
+  meta(property='og:image', content='https://conc.at/images/people@2x.jpg')
+  meta(property='og:description', content='The web development conference in Salzburg, Austria March 7th 2015')
+  meta(property='og:site_name', content='.concat()')
+  meta(property='og:price:amount', content='125')
+  meta(property='og:price:currency', content='EUR')
+
   // build:css(.tmp) styles/main.css
   include ../../bower-styles
   link(rel='stylesheet', href='styles/main.css')
