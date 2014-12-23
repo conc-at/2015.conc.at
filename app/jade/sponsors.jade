@@ -5,14 +5,14 @@ section#sponsors
         h2.section-heading Our Sponsors
         h3.section-subheading.text-muted
           | We have a wide variety of sponsoring opportunities available.&nbsp;
-          a(href='mailto:sponsoring@conc.at') Talk to us
+          a(href='mailto:sponsoring%40conc.at?subject=Sponsoring%20inquiry&body=Hey%20.concat()%20Team%2C%0Acould%20you%20please%20send%20me%20your%20sponsoring%20material%3F%0A%0ABest') Talk to us
 
     .row.biggest
       .col-xs-12.text-center
-        h4 Sponsors
+        //- h4 Sponsors
         .row
           a.sponsor.free.col-md-6.col-md-offset-3(
-              href='mailto:sponsoring@conc.at',
+              href='mailto:sponsoring%40conc.at?subject=Sponsoring%20inquiry&body=Hey%20.concat()%20Team%2C%0Acould%20you%20please%20send%20me%20your%20sponsoring%20material%3F%0A%0ABest',
               title="Try dragging your company's logo here ;)"
             )
             .dragzone.fa.fa-plus.fa-3x
@@ -66,7 +66,19 @@ section#sponsors
       .col-xs-12.text-center
         //- h4 Event Sponsors
         .row
-          a.sponsor.free.col-md-offset-2.col-md-2.col-sm-3.col-xs-6(
+          a.sponsor.col-md-offset-2.col-md-2.col-sm-3.col-xs-6(
+              href='https://aws.amazon.com/',
+              title='Amazon Web Services'
+            )
+            img.img-responsive.img-centered(
+              width='200',
+              height='75',
+              src='images/logos/aws.png', 
+              srcset='images/logos/aws@2x.png 2x',
+              alt='Amazon Web Services'
+            )
+
+          a.sponsor.col-md-2.col-sm-3.col-xs-6(
               href='http://travis-ci.com',
               title='Travis CI'
             )
@@ -78,7 +90,7 @@ section#sponsors
               alt='Travis CI'
             )
 
-          a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
+          a.sponsor.col-md-2.col-sm-3.col-xs-6(
               href='http://hood.ie/',
               title='Hoodie'
             )
@@ -90,7 +102,7 @@ section#sponsors
               alt='Hoodie'
             )
 
-          a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
+          a.sponsor.col-md-2.col-sm-3.col-xs-6(
               href='http://techtrrrs.at/',
               title='techtrrrs'
             )
@@ -101,10 +113,6 @@ section#sponsors
               srcset='images/logos/techtrrrs@2x.png 2x',
               alt='techtrrrs'
             )
-          a#newsponsor.sponsor.col-md-2.col-sm-3.col-xs-6(
-            href='mailto:sponsoring@conc.at',
-            title='Sponsor this event'
-          )
 
         .row
           a.sponsor.col-md-offset-2.col-md-2.col-sm-3.col-xs-6(
@@ -118,7 +126,7 @@ section#sponsors
               srcset='images/logos/fh@2x.jpg 2x',
               alt='University of Applied Sciences Salzburg'
             )
-          a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
+          a.sponsor.col-md-2.col-sm-3.col-xs-6(
               href='http://coworkingsalzburg.com/',
               title='Coworking Salzburg'
             )
@@ -129,7 +137,7 @@ section#sponsors
               srcset='images/logos/cws@2x.jpg 2x',
               alt='Coworking Salzburg'
             )
-          a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
+          a.sponsor.col-md-2.col-sm-3.col-xs-6(
               href='http://die.netzarchitekten.com/',
               title='Die Netzartchitekten'
             )
@@ -141,17 +149,11 @@ section#sponsors
               alt='Die Netzartchitekten'
             )
 
-          a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
-              href='http://excellenteasy.com/',
-              title='excellenteasy'
-            )
-            img.img-responsive.img-centered(
-              width='200',
-              height='75',
-              src='images/logos/ee.png', 
-              srcset='images/logos/ee@2x.png 2x',
-              alt='excellenteasy'
-            )
+          a#newsponsor.sponsor.col-md-2.col-sm-3.col-xs-6(
+            href='mailto:sponsoring@conc.at',
+            title='Sponsor this event'
+          )
+
           //- a.sponsor.free.col-md-2.col-sm-3.col-xs-6(
           //-     href='mailto:sponsoring@conc.at',
           //-     title='Send us your sponsoring inquiry'
