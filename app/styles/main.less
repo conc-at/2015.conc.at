@@ -204,6 +204,8 @@ tito-button {
   }
 }
 
+@import "speakers";
+
 @media (min-width: 768px) {
     .navbar-brand img {
       width: 50px;
@@ -343,75 +345,32 @@ section {
 
 // Portfolio Section
 
-#speakers {
-    .portfolio-item {
-        margin-bottom: 60px;
-        right: 0;
-        .portfolio-link {
-            display: block;
-            position: relative;
-            max-width: 400px;
-            margin: 0 auto;
-            .portfolio-hover {
-                background: fade(@brand-primary, 90%);
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                .transition(all ease 0.5s);
-                &:hover {
-                    opacity: 1;
-                }
-                .portfolio-hover-content {
-                    position: absolute;
-                    width: 100%;
-                    height: 20px;
-                    font-size: 1.3em;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
-                    color: white;
-                    i {
-                        margin-top: -12px;
-                    }
-                    h3,
-                    h4 {
-                        margin: 0;
-                    }
-                }
-            }
+.portfolio-item {
+    margin-bottom: 60px;
+    right: 0;
+    .portfolio-link {
+        display: block;
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .portfolio-caption {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 25px;
+        h4 {
+            text-transform: none;
+            margin: 0;
         }
-        .portfolio-caption {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: white;
-            text-align: center;
-            padding: 25px;
-            h4 {
-                text-transform: none;
-                margin: 0;
-            }
-            p {
-                .serif-font;
-                font-style: italic;
-                font-size: 1em;
-                margin: 0;
-            }
+        p {
+            .serif-font;
+            font-style: italic;
+            font-size: 1em;
+            margin: 0;
         }
     }
-    * {
-        z-index: 2;
-    }
-}
-
-@media (min-width: 992px) {
-  #keynote .col-md-6 {
-    margin-bottom: 120px;
-  }
-}
-
-#cfp {
-  padding-top: 50px;
 }
 
 @media (min-width: 767px) {
@@ -589,7 +548,6 @@ ul.social-buttons {
         border: none;
         min-height: 100%;
         padding: 100px 0;
-        text-align: center;
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
@@ -605,9 +563,6 @@ ul.social-buttons {
         }
         ul.list-inline {
             margin-top: 0;
-        }
-        img {
-            margin-bottom: 30px;
         }
     }
     .close-modal {

@@ -1,0 +1,3 @@
+What if we could write JavaScript programs by just mentioning words like `lodash` or `React` without having to install or require them? What if our computer is always trying to update dependencies and run tests in the background so we won’t break things? What if every module we wrote is instantly useable in our other projects?
+
+We’re going to take a critical look at our past and present and find out what’s keeping us there. Then we’ll explore some fresh ideas from the past millennium until we get a finely distilled interface which is better at writing programs than you are. That was a joke, but one day we’ll be there and you don't want to be the one who's replaced by a computer, right?
