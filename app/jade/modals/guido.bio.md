@@ -1,0 +1,1 @@
+Michele hails from Long Island, New York and has lived in Berlin for the last 2 and a half years. A former teacher, she is now a Junior Developer at Sociomantic Labs. She is passionate about rock climbing, comedy, and pizza.
