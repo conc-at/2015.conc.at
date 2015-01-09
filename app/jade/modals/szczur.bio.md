@@ -1,0 +1,1 @@
+Karolina is a designer, developer and photographer working with her friends at &yet. In her free time she contributes to various Open Source projects, writes and runs CSS Conf Oakland. She also owns a cat and an excessive amount of books on typography.

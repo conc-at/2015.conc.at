@@ -1,0 +1,3 @@
+As creatives we constantly search for ways to optimise and streamline workflows. Currently we’re being bombarded with more tools than ever. But how do we know that we reached a tipping point, when the apparatus we pick introduces more complexity and wastes way more time that it was supposed to save? As craftspeople, how do we maintain simplicity and learn to rely on bare-bones solutions? And more importantly—how do we empower others and collaborate?
+
+We’ll have a look at up-to-date front-end tooling and analyse alternative approaches to compiling, building and automation processes as well as the human side of teamwork.
