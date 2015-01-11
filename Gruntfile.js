@@ -148,7 +148,12 @@ module.exports = function (grunt) {
 
     usemin: {
       options: {
-        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images'],
+        blockReplacements: {
+          js: function (block){
+            return '<script async src="' + block.dest + '"><\/script>';
+          }
+        }
       },
       html: ['<%= config.dist %>/**/*.html'],
       css: ['<%= config.dist %>/styles/**/*.css']
