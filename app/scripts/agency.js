@@ -7,7 +7,7 @@
 
 $(function() {
   var hash = location.hash
-  if (!(/Modal$/.test(hash) || /^#talk/.test(hash))) {
+  if (!(/Modal$/.test(hash) || /^#talk-/.test(hash))) {
     return
   }
   $(hash).modal('show')
