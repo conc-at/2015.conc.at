@@ -1,0 +1,46 @@
+#talk-hacking-the-human-genome.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-content
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Hacking the Human Genome
+
+            p
+              include:markdown schoffstall.md
+            
+            .portfolio-item
+              span.portfolio-link
+                img(
+                  src='images/speakers/eric_schoffstall.jpg', 
+                  srcset='images/speakers/eric_schoffstall@2x.jpg 2x',
+                  alt='Eric Schoffstall'
+                  width='400',
+                  height='289'
+                )
+              .portfolio-caption
+                h3 Eric Schoffstall
+                p.text-muted
+                  a(href='http://gulpjs.com/') gulp.js
+                  | &nbsp;•&nbsp;
+                  a(href='http://wearefractal.com/') Fractal
+                ul.list-inline.social-buttons
+                  li
+                    a(href='https://twitter.com/contrahacks')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://github.com/contra')
+                      i.fa.fa-github-alt
+                  li
+                    a(href='http://contra.io/')
+                      i.fa.fa-globe
+
+            p
+              include:markdown schoffstall.bio.md
+
+            button.btn.btn-primary(type='button', data-dismiss='modal')
+              i.fa.fa-times
+              | &nbsp;Close Abstract

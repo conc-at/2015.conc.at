@@ -1,0 +1,1 @@
+Genetics: the final frontier. What is the link between the human genome and JavaScript? Do you want to find out why your body does that weird thing? In this talk we will unravel the mystery surrounding your source code, and explore using JavaScript to make sense of it. Included with your attendance is a copy of my genome which you may use to make clones.
