@@ -13,32 +13,6 @@ $(function() {
   $(hash).modal('show')
 })
 
-/*global DragDrop:false */
-$(function(){
-  if(typeof window.FileReader === 'undefined') return
-
-  var $drag = $('.dragzone')
-  $(document).on('dragover', $drag.addClass.bind($drag, 'drag'))
-  $drag.on('dragover', $drag.removeClass.bind($drag, 'fa-plus'))
-  $drag.on('dragleave ', $drag.addClass.bind($drag, 'fa-plus'))
-
-  new DragDrop($drag[0], function (files) {
-    var file = files.pop()
-    $drag.addClass('dragged')
-    var reader = new FileReader()
-    reader.onload = function (event) {
-      $('#newsponsor')
-        .html('')
-        .append($('<div>')
-          .css('background-image', 'url(' + event.target.result + ')')
-        )
-        .show()
-    }
-    reader.readAsDataURL(file);
-  })
-})
-
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
   $('a.page-scroll').bind('click', function(event) {
