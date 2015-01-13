@@ -1,0 +1,44 @@
+#talk-aint-no-party.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-content
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Ain't No Party Like a Third-Party JavaScript Party
+
+            p
+              include:markdown murphey.md
+            
+            .portfolio-item
+              span.portfolio-link
+                img(
+                  src='images/speakers/rebecca_murphey.jpg', 
+                  srcset='images/speakers/rebecca_murphey@2x.jpg 2x',
+                  alt='Rebecca Murphey'
+                  width='400',
+                  height='289'
+                )
+              .portfolio-caption
+                h3 Rebecca Murphey
+                p.text-muted
+                  a(href='http://bazaarvoice.com/') Bazaarvoice
+                ul.list-inline.social-buttons
+                  li
+                    a(href='https://twitter.com/rmurphey')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://github.com/rmurphey')
+                      i.fa.fa-github-alt
+                  li
+                    a(href='http://rmurphey.com/')
+                      i.fa.fa-globe
+
+            p
+              include:markdown murphey.bio.md
+
+            button.btn.btn-primary(type='button', data-dismiss='modal')
+              i.fa.fa-times
+              | &nbsp;Close Abstract
