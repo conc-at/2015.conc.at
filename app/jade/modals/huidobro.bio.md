@@ -1,0 +1,1 @@
+I’ve been developing Mac, iOS and Web apps for five years, and loving every minute of it. In the last three years, I’ve been running the “Computer Game Programming” after school activity at my old school in Vienna where I teach kids to make games with different technologies. Currently wrapping up my Software Engineering degree at the Vienna University of Technology.
