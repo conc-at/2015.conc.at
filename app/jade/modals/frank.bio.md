@@ -1,0 +1,1 @@
+Laura Frank is a developer who creates tools to make development processes simpler. She started coding after receiving a hand-me-down DOS system and has been lost in the code mines ever since. She is currently a senior software engineer at CenturyLink Labs and lives in Chicago.
