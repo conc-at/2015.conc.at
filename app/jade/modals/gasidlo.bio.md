@@ -1,0 +1,1 @@
+Ola is a front-end / JavaScript developer, core member of Team Hoodie and organiser of OpenTechSchool Dortmund. She loves making the web accessible for everyone, riding the trails and daughter-driven development.
