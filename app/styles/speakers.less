@@ -11,16 +11,18 @@
     align-items: center;
     margin: 40px 0;
     padding-right: 20px;
+    cursor: pointer;
 
-    &.has-abstract {
-      cursor: pointer;
-      &:hover {
-        background: white;
+    &:hover:not(.no-abstract) {
+      background: white;
 
-        img {
-          border: 7px solid #f7f7f7;
-        }
+      img {
+        border: 7px solid #f7f7f7;
       }
+    }
+
+    &.no-abstract {
+      cursor: default;
     }
 
     &.long {

@@ -1,54 +1,23 @@
-section#speakers.bg-light-gray
+section#talks.bg-light-gray
   .container
     .row
-      .col-md-6.portfolio-item
-        span.portfolio-link
-          img(
-            src='images/speakers/lena_reinhard.jpg', 
-            srcset='images/speakers/lena_reinhard@2x.jpg 2x', 
-            alt='Lena Reinhard',
-            width='400',
-            height='289'
-          )
-        .portfolio-caption
-          h4 Lena Reinhard
-          p.text-muted
-            a(href='http://hood.ie') Hoodie
-          ul.list-inline.social-buttons
-            li
-              a(href='https://twitter.com/lrnrd')
-                i.fa.fa-twitter
-            li
-              a(href='https://github.com/ffffux')
-                i.fa.fa-github-alt
-            li
-              a(href='http://schoenaberselten.com/hi-there/')
-                i.fa.fa-globe
+      .col-lg-12.text-center
+        h2.section-heading Talks
+        h3.section-subheading.text-muted Listen and talk to these fine folks
     .row
-      .col-md-6.portfolio-item
-        span.portfolio-link
-          img(
-            src='images/speakers/vitaly_friedman.jpg',
-            srcset='images/speakers/vitaly_friedman@2x.jpg 2x',
-            alt='Vitaly Friedman',
-            width='400',
-            height='289'
-          )
-        .portfolio-caption
-          h4 Vitaly Friedman
-          p.text-muted
-            a(href='http://www.smashingmagazine.com/') Smashing Magazine
-          ul.list-inline.social-buttons
-            li
-              a(href='https://twitter.com/smashingmag')
-                i.fa.fa-twitter
-            li
-              a(href='https://dribbble.com/smashingmag')
-                i.fa.fa-dribbble
-            li
-              a(href='https://plus.google.com/101951294740286010890')
-                i.fa.fa-google-plus
-  .container
-    .row#cfp
-      .col-md-8.col-md-offset-2
-        include:markdown speakers.md
+      .col-md-6
+        +speaker('Douglas Crockford', 'The Better Parts', '#talk-the-better-parts')
+        +speaker('Lena Reinhard', 'A Talk About Nothing', '#talk-a-talk-about-nothing', '@lrnrd')
+        +speaker('Stephan Seidt', 'The Meaning of Words', '#talk-the-meaning-of-words', '@evilhackerdude')
+        +speaker('Rebecca Murphey', 'Ain\'t No Party Like a Third-Party JavaScript Party', '#talk-aint-no-party', '@rmurphey')
+        +speaker('Ramón Huidobro', 'How Teaching Kids Made Me a Better Developer', '#talk-teaching-kids', '@senorhuidobro')
+        +speaker('Ola Gasidlo', 'Say Hello To Offline First', '#talk-say-hello-to-offline-first', '@misprintedtype')
+
+      .col-md-6
+        +speaker('Karolina Szczur', 'No More Tools', '#talk-no-more-tools', '@fox')
+        +speaker('Eric Schoffstall', 'Hacking the Human Genome', '#talk-hacking-the-human-genome', '@contrahacks')
+        +speaker('Michele Guido', 'It Takes a Village to Make a Programmer', '#talk-it-takes-a-village', '@sheley')
+        +speaker('Ben Schwarz', 'Useful Performance Metrics', '#talk-useful-performance-metrics', '@benschwarz')
+        +speaker('Laura Frank', 'Containerized Applications with Docker', '#talk-containerized-applications-with-docker', '@rhein_wein')
+        - var more = 'There are a total of 18 talk slots for which we received more than 160 proposals. We will announce more speakers every day.'
+        +speaker('More Speakers…', more)(class='no-abstract')
