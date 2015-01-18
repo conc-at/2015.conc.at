@@ -162,5 +162,5 @@ $(function() {
     setScroll(false)
   })
 
-  google.maps.event.addDomListener(window, 'load', initialize)
+  initialize()
 })
