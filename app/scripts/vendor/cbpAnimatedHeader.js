@@ -8,37 +8,22 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
-var cbpAnimatedHeader = (function() {
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.navbar-default' ),
-		didScroll = false,
-		changeHeaderOn = 140;
-
-	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
+(function() {
+  var header = $('.navbar-default')
+  var shrinkClass = 'navbar-shrink'
+  var changeHeaderOn = 140
+  var didScroll = false
 
 	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'navbar-shrink' );
-		}
-		else {
-			classie.remove( header, 'navbar-shrink' );
-		}
-		didScroll = false;
+    didScroll = false
+		header[($(document).scrollTop() >= changeHeaderOn ? 'add' : 'remove') + 'Class'](shrinkClass)
 	}
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
-
-	init();
-
-})();
+	window.addEventListener('scroll', function(){
+    if(!didScroll) {
+      didScroll = true
+      setTimeout(scrollPage, 250)
+    }
+  }, false)
+})()
