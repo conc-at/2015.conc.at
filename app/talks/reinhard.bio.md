@@ -1,0 +1,1 @@
+Lena Reinhard is a CEO, co-founder, project- and communications manager. She’s part of the Open Source Projects Hoodie and CouchDB, loves making music and enjoys going on extensive road trips. And somehow accidentally she always ends up at places where she meets Alpacas
