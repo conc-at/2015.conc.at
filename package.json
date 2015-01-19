@@ -27,7 +27,6 @@
     "grunt-svgmin": "^2.0.0",
     "grunt-uncss": "^0.3.5",
     "grunt-usemin": "^3.0.0",
-    "grunt-wiredep": "^2.0.0",
     "jshint-stylish": "^1.0.0",
     "load-grunt-tasks": "^2.0.0",
     "marked": "^0.3.2",

@@ -55,8 +55,9 @@ head
   meta(property='og:price:amount', content='125')
   meta(property='og:price:currency', content='EUR')
 
-  // build:css(.tmp) styles/main.css
-  include ../../bower-styles
+  // build:css({app,.tmp})  styles/main.css
+  link(rel='stylesheet', href='../node_modules/bootstrap/dist/css/bootstrap.css')
+  link(rel='stylesheet', href='../node_modules/font-awesome/css/font-awesome.css')
   link(rel='stylesheet', href='styles/main.css')
   block styles
   // endbuild
