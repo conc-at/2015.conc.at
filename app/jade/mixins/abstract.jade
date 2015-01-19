@@ -1,0 +1,35 @@
+mixin abstract(name, talk, id)
+  - var img = name.toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(' ','_')
+  - var lastname = name.split(' ')[1].toLowerCase()
+  .portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true', id=id)
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              h2= talk
+
+              != dynamicmd('app/talks/' + lastname + '.md')
+
+              .portfolio-item
+                span.portfolio-link
+                  img(
+                    src='images/speakers/#{img}.jpg',
+                    srcset='images/speakers/#{img}@2x.jpg 2x',
+                    alt=name,
+                    width='400',
+                    height='289'
+                  )
+                .portfolio-caption
+                  h3= name
+                  if block
+                    block
+
+              != dynamicmd('app/talks/' + lastname + '.bio.md')
+
+              button.btn.btn-primary(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                |  Close Abstract

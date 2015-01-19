@@ -1,41 +1,4 @@
-#talk-say-hello-to-offline-first.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-  .modal-content
-    .close-modal(data-dismiss='modal')
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            h2 Say Hello To Offline First
-
-            p
-              include:markdown gasidlo.md
-
-            .portfolio-item
-              span.portfolio-link
-                img(
-                  src='images/speakers/ola_gasidlo.jpg',
-                  srcset='images/speakers/ola_gasidlo@2x.jpg 2x',
-                  alt='Ola Gasidlo',
-                  width='400',
-                  height='289'
-                )
-              .portfolio-caption
-                h3 Ola Gasidlo
-                p.text-muted
-                  a(href='http://hood.ie') Hoodie
-                ul.list-inline.social-buttons
-                  li
-                    a(href='https://twitter.com/misprintedtype')
-                      i.fa.fa-twitter
-                  li
-                    a(href='http://github.com/zoepage')
-                      i.fa.fa-github-alt
-
-            p
-              include:markdown gasidlo.bio.md
-
-            button.btn.btn-primary(type='button', data-dismiss='modal')
-              i.fa.fa-times
-              |  Close Abstract
++abstract('Ola Gasidlo', 'Say Hello To Offline First', 'talk-say-hello-to-offline-first')
+  p.text-muted
+    a(href='http://hood.ie') Hoodie
+  +social('misprintedtype', 'zoepage')

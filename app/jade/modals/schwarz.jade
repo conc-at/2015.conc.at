@@ -1,44 +1,4 @@
-#talk-useful-performance-metrics.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-  .modal-content
-    .close-modal(data-dismiss='modal')
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            h2 Useful Performance Metrics
-
-            p
-              include:markdown schwarz.md
-            
-            .portfolio-item
-              span.portfolio-link
-                img(
-                  src='images/speakers/ben_schwarz.jpg', 
-                  srcset='images/speakers/ben_schwarz@2x.jpg 2x',
-                  alt='Ben Schwarz'
-                  width='400',
-                  height='289'
-                )
-              .portfolio-caption
-                h3 Ben Schwarz
-                p.text-muted
-                  a(href='http://germanforblack.com/post/107341615463/time-to-change-up-im-looking-for-a-job') Hire Ben
-                ul.list-inline.social-buttons
-                  li
-                    a(href='https://twitter.com/benschwarz')
-                      i.fa.fa-twitter
-                  li
-                    a(href='https://github.com/benschwarz')
-                      i.fa.fa-github-alt
-                  li
-                    a(href='http://germanforblack.com/')
-                      i.fa.fa-globe
-
-            p
-              include:markdown schwarz.bio.md
-
-            button.btn.btn-primary(type='button', data-dismiss='modal')
-              i.fa.fa-times
-              |  Close Abstract
++abstract('Ben Schwarz', 'Useful Performance Metrics', 'talk-useful-performance-metrics')
+  p.text-muted
+    a(href='http://germanforblack.com/post/107341615463/time-to-change-up-im-looking-for-a-job') Hire Ben
+  +social('benschwarz', 'benschwarz', 'http://germanforblack.com/')

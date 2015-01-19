@@ -1,0 +1,14 @@
+mixin social(twitter, github, href)
+  ul.list-inline.social-buttons
+    - if (twitter)
+      li
+        a(href='https://twitter.com/#{twitter}')
+          i.fa.fa-twitter
+    - if (github)
+      li
+        a(href='https://github.com/#{github}')
+          i.fa.fa-github-alt
+    - if (href)
+      li
+        a(href=href)
+          i.fa.fa-globe

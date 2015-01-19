@@ -1,6 +1,9 @@
 module.exports = function (grunt) {
   'use strict';
 
+  var fs = require('fs');
+  var marked = require('marked');
+
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -244,7 +247,12 @@ module.exports = function (grunt) {
 
     jade: {
       options: {
-        pretty: true
+        pretty: true,
+        data: {
+          dynamicmd: function(path) {
+            return marked(fs.readFileSync(path.trim())+'');
+          }
+        }
       },
       build: {
         src: '<%= config.app %>/index.jade',

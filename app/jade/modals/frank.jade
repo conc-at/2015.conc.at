@@ -1,44 +1,4 @@
-#talk-containerized-applications-with-docker.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-  .modal-content
-    .close-modal(data-dismiss='modal')
-      .lr
-        .rl
-    .container
-      .row
-        .col-lg-8.col-lg-offset-2
-          .modal-body
-            h2 Containerized Applications with Docker
-
-            p
-              include:markdown frank.md
-
-            .portfolio-item
-              span.portfolio-link
-                img(
-                  src='images/speakers/laura_frank.jpg',
-                  srcset='images/speakers/laura_frank@2x.jpg 2x',
-                  alt='Laura Frank',
-                  width='400',
-                  height='289'
-                )
-              .portfolio-caption
-                h3 Laura Frank
-                p.text-muted
-                  a(href='http://www.centurylinklabs.com/') CenturyLink Labs
-                ul.list-inline.social-buttons
-                  li
-                    a(href='https://twitter.com/rhein_wein')
-                      i.fa.fa-twitter
-                  li
-                    a(href='http://github.com/rheinwein')
-                      i.fa.fa-github-alt
-                  li
-                    a(href='http://laura.is/')
-                      i.fa.fa-globe
-
-            p
-              include:markdown frank.bio.md
-
-            button.btn.btn-primary(type='button', data-dismiss='modal')
-              i.fa.fa-times
-              |  Close Abstract
++abstract('Laura Frank', 'Containerized Applications with Docker', 'talk-containerized-applications-with-docker')
+  p.text-muted
+    a(href='http://www.centurylinklabs.com/') CenturyLink Labs
+  +social('rhein_wein', 'rheinwein', 'http://laura.is/')
