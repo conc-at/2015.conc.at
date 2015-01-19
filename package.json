@@ -44,6 +44,7 @@
     "font-awesome": "^4.2.0",
     "headroom.js": "git://github.com/WickyNilliams/headroom.js",
     "jquery": "^2.1.3",
+    "jquery-waypoints": "git://github.com/imakewebthings/waypoints",
     "jquery.easing": "^1.3.1",
     "picturefill": "^2.2.0"
   }
