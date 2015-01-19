@@ -1,4 +1,6 @@
 # conc.at
+![Build Status](https://jenkins.dovigo.org/buildStatus/icon?job=concat)
+[![Dependency Status](https://david-dm.org/conc-at/conc.at.svg)](https://david-dm.org/conc-at/conc.at)
 [![devDependency Status](https://david-dm.org/conc-at/conc.at/dev-status.svg)](https://david-dm.org/conc-at/conc.at#info=devDependencies)
 
 > conc.at is a static single page website. It is generated with grunt, written in jade, less and js and uses jQuery and Bootstrap.
