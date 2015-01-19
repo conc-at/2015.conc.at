@@ -5,6 +5,7 @@ section#talks.bg-light-gray
         h2.section-heading Talks
         h3.section-subheading.text-muted Listen and talk to these fine folks
     .row
+      - var more = 'There are a total of 18 talk slots for which we received more than 160 proposals. We will announce more speakers every day.'
       .col-md-6
         +speaker('Douglas Crockford', 'The Better Parts', '#talk-the-better-parts')
         +speaker('Lena Reinhard', 'A Talk About Nothing', '#talk-a-talk-about-nothing', '@lrnrd')
@@ -19,5 +20,5 @@ section#talks.bg-light-gray
         +speaker('Michele Guido', 'It Takes a Village to Make a Programmer', '#talk-it-takes-a-village', '@sheley')
         +speaker('Ben Schwarz', 'Useful Performance Metrics', '#talk-useful-performance-metrics', '@benschwarz')
         +speaker('Laura Frank', 'Containerized Applications with Docker', '#talk-containerized-applications-with-docker', '@rhein_wein')
-        - var more = 'There are a total of 18 talk slots for which we received more than 160 proposals. We will announce more speakers every day.'
+        +speaker('Frederic Hemberger', 'Developing a Mindset for Web-Security', '#talk-mindest-for-web-security', '@fhemberger')
         +speaker('More Speakers…', more)(class='no-abstract')

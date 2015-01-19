@@ -107,12 +107,12 @@ $(function() {
           new google.maps.LatLng(51.2333, 6.7833),
           sbg
         ]
-      // }, {
-      //   path: [
-      //     // Cologne
-      //     new google.maps.LatLng(50.9364, 6.9528),
-      //     sbg
-      //   ]
+      }, {
+        path: [
+          // Cologne
+          new google.maps.LatLng(50.9364, 6.9528),
+          sbg
+        ]
       }, {
         path: [
           // Berlin
