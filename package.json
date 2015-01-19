@@ -2,7 +2,6 @@
   "name": "conc.at",
   "version": "0.0.0",
   "devDependencies": {
-    "bower": "^1.3.12",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.1.0",
     "grunt-cli": "^0.1.13",
@@ -38,7 +37,14 @@
   },
   "scripts": {
     "test": "grunt build",
-    "start": "grunt serve:dist",
-    "install": "bower install"
+    "start": "grunt serve:dist"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.2",
+    "font-awesome": "^4.2.0",
+    "headroom.js": "git://github.com/WickyNilliams/headroom.js",
+    "jquery": "^2.1.3",
+    "jquery.easing": "^1.3.1",
+    "picturefill": "^2.2.0"
   }
 }

@@ -20,10 +20,6 @@ module.exports = function (grunt) {
     config: config,
 
     watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wiredep']
-      },
       js: {
         files: ['<%= config.app %>/scripts/**/*.js'],
         tasks: ['jshint'],
@@ -66,7 +62,7 @@ module.exports = function (grunt) {
           middleware: function(connect) {
             return [
               connect.static('.tmp'),
-              connect().use('/bower_components', connect.static('./bower_components')),
+              connect().use('/node_modules', connect.static('./node_modules')),
               connect.static(config.app)
             ];
           }
@@ -117,13 +113,6 @@ module.exports = function (grunt) {
           src: '**/*.css',
           dest: '<%= config.dist %>/styles/'
         }]
-      }
-    },
-
-    wiredep: {
-      app: {
-        src: ['<%= config.app %>/bower-*.jade'],
-        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
 
@@ -225,13 +214,13 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/bootstrap/dist',
+          cwd: 'node_modules/bootstrap/dist',
           src: ['fonts/*.*'],
           dest: '<%= config.dist %>'
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/font-awesome/',
+          cwd: 'node_modules/font-awesome/',
           src: ['fonts/*.*'],
           dest: '<%= config.dist %>'
         }]
