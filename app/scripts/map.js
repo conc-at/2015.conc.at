@@ -1,6 +1,15 @@
 // Map
 /*global google:false */
 $(function() {
+  var rAF = (function(){
+    return  window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      function(callback){
+        window.setTimeout(callback, 1000 / 60);
+      };
+  })();
+
   var map
   if (!google) {
     return
@@ -56,8 +65,7 @@ $(function() {
           // SFO
           new google.maps.LatLng(37.7833, -122.4167),
           sbg
-        ],
-        quantity: 2 //3 //4
+        ]
       }, {
         path: [
           // Austin
@@ -99,8 +107,7 @@ $(function() {
           // Munich
           new google.maps.LatLng(48.1333, 11.5667),
           sbg
-        ],
-        quantity: 1 //2
+        ]
       }, {
         path: [
           // Düsseldorf
@@ -118,36 +125,88 @@ $(function() {
           // Berlin
           new google.maps.LatLng(52.5167, 13.3833),
           sbg
-        ],
-        quantity: 2 //4
+        ]
       // }, {
       //   path: [
       //     // London
       //     new google.maps.LatLng(51.5072, -0.1275),
       //     sbg
-      //   ],
-      //   quantity: 1
+      //   ]
       // }, {
       //   path: [
       //     // San Jose, CR
       //     new google.maps.LatLng(9.6000, -83.9500),
       //     sbg
-      //   ],
-      //   quantity: 1
+      //   ]
       }
     ]
+
+    var paths = [];
 
     flights.forEach(function(flight) {
       var flightPath = new google.maps.Polyline({
         path: flight.path,
+        icons: [
+          {
+            icon: {
+              path: 'M 194.67321,2.8421709e-14 L 70.641958,53.625 ' +
+               'C 60.259688,46.70393 36.441378,32.34961 31.736508,30.17602 ' +
+               'C -7.7035221,11.95523 -5.2088921,44.90709 11.387258,54.78122 ' +
+               'C 15.926428,57.48187 39.110778,71.95945 54.860708,81.15624 ' +
+               'L 72.766958,215.09374 L 94.985708,228.24999 L 106.51696,107.31249 ' +
+               'L 178.04821,143.99999 L 181.89196,183.21874 L 196.42321,191.84374 ' +
+               'L 207.51696,149.43749 L 207.64196,149.49999 L 238.45446,117.96874 ' +
+               'L 223.57946,109.96874 L 187.95446,126.87499 L 119.67321,84.43749 ' +
+               'L 217.36071,12.25 L 194.67321,2.8421709e-14 z',
+              scale: 0.1,
+              fillColor: 'black',
+              strokeColor: 'black',
+              strokeWeight: 0,
+              rotation: 60
+            },
+            offset: '0%'
+          }
+        ],
         geodesic: true,
         strokeColor: '#c50202',
         strokeOpacity: 1.0,
-        strokeWeight: (flight.quantity || 1) * 2
+        strokeWeight: 0
       });
 
       flightPath.setMap(map);
+
+      paths.push(flightPath);
     })
+
+    var count = 0;
+    var path = 0;
+
+    function animatePlanes() {
+      count++;
+
+      if (count > 200) {
+        count = 0;
+        path++;
+        if (path > paths.length) return;
+      }
+
+      var icons = paths[path].get('icons');
+      icons[0].offset = (count / 2) + '%';
+      if (count === 200) {
+        icons[0].icon.fillOpacity = 0;
+        icons[0].icon.strokeWeight = 0;
+        paths[path].strokeWeight = 1;
+      } else {
+        icons[0].icon.fillOpacity = 1;
+        icons[0].icon.strokeWeight = 1;
+      }
+
+      paths[path].set('icons', icons);
+
+      rAF(animatePlanes);
+    }
+
+    animatePlanes()
   }
 
   $('body').on('mousedown', function(event) {
