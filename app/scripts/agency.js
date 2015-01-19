@@ -13,8 +13,10 @@ $(function() {
   $(hash).modal('show')
 })
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
+  $('nav.navbar').headroom()
+
+  // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {
     var href = $(this).attr('href')
     $('html, body').stop().animate({
@@ -23,17 +25,18 @@ $(function() {
     history.pushState({}, '', href)
     event.preventDefault()
   })
+
+  // Highlight the top nav as scrolling occurs
+  $('body').scrollspy({
+    target: '.navbar-fixed-top'
+  })
+
+  // Closes the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click()
+  })
 })
 
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-  target: '.navbar-fixed-top'
-})
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-  $('.navbar-toggle:visible').click()
-})
 
 window.addEventListener('updateready', window.location.reload)
 

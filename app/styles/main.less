@@ -113,6 +113,20 @@ h1, h2, h3, h4, h5, h6 {
 
 // Custom Navigation Bar
 
+.headroom {
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+.headroom--not-top .navbar-brand {
+  .opacity(1);
+}
+
 .navbar .fa-wrapper {
   padding-top: 11px;
   padding-bottom: 0;
@@ -133,6 +147,11 @@ h1, h2, h3, h4, h5, h6 {
             color: darken(@brand-primary, 10%);
         }
     }
+
+    &.headroom--not-top .navbar-brand {
+      .opacity(1);
+    }
+
     .navbar-collapse {
         border-color: fade(white, 2%);
     }
@@ -174,15 +193,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.navbar-brand {
-  transform: rotateY(90deg);
-}
-
-.navbar-shrink .navbar-brand {
-    .opacity(1);
-    transform: rotateY(0);
-}
-
 .navbar-brand img {
   width: 34px;
   height: 34px;
@@ -207,33 +217,28 @@ tito-button {
 @import "speakers";
 
 @media (min-width: 768px) {
-    .navbar-brand img {
-      width: 50px;
-      height: 50px;
-      margin-top: 0;
-    }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+  }
 
-    .navbar-default {
-        background-color: transparent;
-        padding: 25px 0;
-        .transition(padding-top 0.3s);
-        border: none;
-        .navbar-brand {
-            font-size: 2em;
-            .transition(all 0.3s);
-        }
-        .navbar-nav > .active > a {
-            border-radius: 3px;
-        }
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    border: none;
+    .navbar-brand {
+      font-size: 2em;
     }
-
-    .navbar-default.navbar-shrink {
-        background-color: @gray-darkest;
-        padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
-        }
+    .navbar-nav > .active > a {
+      border-radius: 3px;
     }
+    background-color: @gray-darkest;
+    padding: 10px 0;
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
 }
 
 header {
@@ -614,12 +619,6 @@ footer {
     .list-inline {
         margin: 20px 0;
     }
-}
-
-@media (min-width: 768px) and(max-width: 992px) {
-  .navbar-brand {
-    display: none;
-  }
 }
 
 @import "fonts";

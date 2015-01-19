@@ -312,6 +312,7 @@ module.exports = function (grunt) {
           /modal/,
           /footer/,
           /sponsor/,
+          /headroom/,
           /\.team-member/,
           /\.img\-circle/,
           /\.list\-inline/,
