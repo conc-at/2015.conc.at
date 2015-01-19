@@ -1,77 +1,54 @@
 // Bootstrap Button Variant
 
 .button-variant(@color; @background; @border) {
-    color: @color;
-    background-color: @background;
-    border-color: @border;
+  color: @color;
+  background-color: @background;
+  border-color: @border;
 
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle & {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle & {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
     &:hover,
     &:focus,
     &:active,
-    &.active,
-    .open .dropdown-toggle & {
-        color: @color;
-        background-color: darken(@background, 10%);
-        border-color: darken(@border, 12%);
+    &.active {
+      background-color: @background;
+      border-color: @border;
     }
-    &:active,
-    &.active,
-    .open .dropdown-toggle & {
-        background-image: none;
-    }
-    &.disabled,
-    &[disabled],
-    fieldset[disabled] & {
-        &,
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            background-color: @background;
-            border-color: @border;
-        }
-    }
+  }
 
-    .badge {
-        color: @background;
-        background-color: @color;
-    }
-}
-
-// Background Features
-
-.background-cover() {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
 }
 
 // Font Selections
 
 .serif-font() {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .body-font() {
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .heading-font() {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-}
-
-// Vendor prefixes
-.transition(@transition) {
-    -webkit-transition: @transition;
-    -o-transition: @transition;
-    transition: @transition;
-}
-
-.opacity(@opacity) {
-    opacity: @opacity;
-    // IE8 filter
-    @opacity-ie: (@opacity * 100);
-    filter: ~"alpha(opacity=@{opacity-ie})";
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
