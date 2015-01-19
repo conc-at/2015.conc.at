@@ -14,7 +14,19 @@ $(function() {
 })
 
 $(function() {
-  $('nav.navbar').headroom()
+  var timeout
+  var $nav = $('nav.navbar')
+  $nav.headroom({
+    onTop: function() {
+      clearTimeout(timeout)
+      $nav.removeClass('navbar-bg')
+    },
+    onNotTop: function() {
+      timeout = setTimeout(function() {
+        $nav.addClass('navbar-bg')
+      }, 300)
+    }
+  })
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $('a.page-scroll').bind('click', function(event) {

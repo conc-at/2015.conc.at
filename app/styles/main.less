@@ -133,7 +133,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default {
-    background-color: @gray-darkest;
     border-color: transparent;
     .navbar-brand {
         padding-top: 0;
@@ -148,8 +147,11 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 
-    &.headroom--not-top .navbar-brand {
-      .opacity(1);
+    &.navbar-bg {
+      background-color: @gray-darkest;
+      .navbar-brand {
+        .opacity(1);
+      }
     }
 
     .navbar-collapse {
@@ -233,7 +235,6 @@ tito-button {
     .navbar-nav > .active > a {
       border-radius: 3px;
     }
-    background-color: @gray-darkest;
     padding: 10px 0;
     .navbar-brand {
       font-size: 1.5em;
