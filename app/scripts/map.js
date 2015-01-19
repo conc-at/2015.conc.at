@@ -187,7 +187,7 @@ $(function() {
       if (count > 200) {
         count = 0;
         path++;
-        if (path > paths.length) return;
+        if (path === paths.length) return;
       }
 
       var icons = paths[path].get('icons');
