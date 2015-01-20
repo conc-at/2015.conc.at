@@ -11,7 +11,7 @@ $(function() {
   })();
 
   var map
-  var $map = $('#map').show()
+  var $map = $('#map')
 
   var setScroll = function(option) {
     if (!map) {
@@ -218,5 +218,9 @@ $(function() {
     setScroll(false)
   })
 
-  window.initializeMap = initialize;
+  if (window.__loadedMap) {
+    window.__initializeMap = function() {};
+    return initialize();
+  }
+  window.__initializeMap = initialize;
 })

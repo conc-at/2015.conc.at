@@ -2,30 +2,31 @@
   'use strict';
   /*global Waypoint:false */
   var tloaded = false;
-  var tito = new Waypoint({
+  new Waypoint({
     element: document.querySelector('#talks'),
     handler: function() {
-      if (tloaded) return destroy(tito);
+      if (tloaded) return destroy(this);
       tloaded = true;
       var script = document.createElement('script');
       script.src = 'https://js.tito.io/v1';
       document.querySelector('body').appendChild(script)
-      destroy(tito)
+      destroy(this)
     }
   });
 
   var gloaded = false;
-  var google = new Waypoint({
+  new Waypoint({
     element: document.querySelector('#about'),
     handler: function() {
-      if (gloaded) return destroy(google);
+      if (gloaded) return destroy(this);
       gloaded = true;
-      window.initializeMap();
-      destroy(google);
+      window.__loadedMap = true;
+      if (typeof window.__initializeMap === 'function') window.__initializeMap();
+      destroy(this);
     }
   });
 
   function destroy(waypoint) {
-    if (waypoint) waypoint.destroy()
+    if (waypoint && (typeof waypoint.destroy === 'function')) waypoint.destroy()
   }
 })();
