@@ -90,12 +90,12 @@ $(function() {
           new google.maps.LatLng(50.0614, 19.9372),
           sbg
         ]
-      // }, {
-      //   path: [
-      //     // Zurich
-      //     new google.maps.LatLng(47.3667, 8.5500),
-      //     sbg
-      //   ]
+      }, {
+        path: [
+          // Zurich
+          new google.maps.LatLng(47.3667, 8.5500),
+          sbg
+        ]
       }, {
         path: [
           // Vienna

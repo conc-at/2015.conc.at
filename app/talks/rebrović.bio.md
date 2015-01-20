@@ -1,0 +1,1 @@
+Merlin works as an interaction designer at Google and YouTube. With a computer science degree and a few years of working as a software engineer, he shifted to design realizing that you need both design and engineering to make great products. When not building something new, Merlin can be found reading or relaxing in nature.
