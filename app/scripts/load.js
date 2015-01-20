@@ -1,19 +1,31 @@
 (function() {
   'use strict';
   /*global Waypoint:false */
-  var loaded = false;
-  var waypoint = new Waypoint({
+  var tloaded = false;
+  var tito = new Waypoint({
     element: document.querySelector('#talks'),
     handler: function() {
-      if (loaded) return destroy();
-      loaded = true;
-      var tito = document.createElement('script');
-      tito.src = 'https://js.tito.io/v1';
-      document.querySelector('body').appendChild(tito)
-      destroy()
+      if (tloaded) return destroy(tito);
+      tloaded = true;
+      var script = document.createElement('script');
+      script.src = 'https://js.tito.io/v1';
+      document.querySelector('body').appendChild(script)
+      destroy(tito)
     }
   });
-  function destroy() {
+
+  var gloaded = false;
+  var google = new Waypoint({
+    element: document.querySelector('#about'),
+    handler: function() {
+      if (gloaded) return destroy(google);
+      gloaded = true;
+      window.initializeMap();
+      destroy(google);
+    }
+  });
+
+  function destroy(waypoint) {
     if (waypoint) waypoint.destroy()
   }
 })();

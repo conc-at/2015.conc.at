@@ -11,9 +11,6 @@ $(function() {
   })();
 
   var map
-  if (!google) {
-    return
-  }
   var $map = $('#map').show()
 
   var setScroll = function(option) {
@@ -221,5 +218,5 @@ $(function() {
     setScroll(false)
   })
 
-  initialize()
+  window.initializeMap = initialize;
 })
