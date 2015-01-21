@@ -1,0 +1,1 @@
+Franziska has a PhD in mathematics and works as software consultant for TNG Technology Consulting GmbH. She has contributed to several open source projects and has taught a Node.js workshop at the International Summer University for Women in Informatics.
