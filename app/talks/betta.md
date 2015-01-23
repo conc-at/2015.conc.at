@@ -1,0 +1,3 @@
+The Credit Card is over 60 years old and was invented way before the web came along, and we are paying the price for it. This notorious master of payments likes to be kidnapped, is easy to abuse, has a habit of bringing out the worst in web forms and loves to spread it's digits all over the internet.
+
+Cristiano Betta is a long time webdev and Developer Advocate at Braintree Payments. With a passion for payments and a broad sense of humor he takes apart the worst user interactions a Credit Card provides and shows what the future of payments could look like. From web to mobile, from IoT to wearables, the future of payments are more in flux than ever before and the Credit Card is very much at the hart of it all.

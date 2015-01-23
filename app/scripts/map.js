@@ -123,12 +123,12 @@ $(function() {
           new google.maps.LatLng(52.5167, 13.3833),
           sbg
         ]
-      // }, {
-      //   path: [
-      //     // London
-      //     new google.maps.LatLng(51.5072, -0.1275),
-      //     sbg
-      //   ]
+      }, {
+        path: [
+          // London
+          new google.maps.LatLng(51.5072, -0.1275),
+          sbg
+        ]
       // }, {
       //   path: [
       //     // San Jose, CR
