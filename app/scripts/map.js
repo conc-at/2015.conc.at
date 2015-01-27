@@ -129,6 +129,12 @@ $(function() {
           new google.maps.LatLng(51.5072, -0.1275),
           sbg
         ]
+      }, {
+        path: [
+          // Hamburg
+          new google.maps.LatLng(53.5653, 10.0014),
+          sbg
+        ]
       // }, {
       //   path: [
       //     // San Jose, CR
