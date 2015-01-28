@@ -443,18 +443,26 @@ section {
 }
 
 #essbar {
-  position: relative;
+
+  a {
+    display: block;
+    width: 375px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
 
   .default {
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: opacity 0.2s ease;
     opacity: 1;
   }
 
   img {
+    max-width: 100%;
     border-radius: 4px;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
   &:hover .default {
     opacity: 0;
