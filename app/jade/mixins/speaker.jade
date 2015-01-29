@@ -1,6 +1,5 @@
 mixin speaker(name, talk, href, twitter)
-  - var thumb = name.toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(' ','_')
-  a.speaker(href=href, data-toggle='modal')&attributes(attributes)
+  mixin inner()
     img(
       src='images/speakers/#{thumb}_thumb.jpg',
       srcset='images/speakers/#{thumb}_thumb@2x.jpg 2x',
@@ -10,6 +9,17 @@ mixin speaker(name, talk, href, twitter)
     )
     .info
       h4 #{name + ' '}
-        - if (talk)
+        if href
           small= twitter
+        else
+          small
+            a(href='https://twitter.com/' + twitter)= twitter
       p= talk
+
+  - var thumb = name.toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(' ','_')
+  if href
+    a.speaker(href=href, data-toggle='modal')&attributes(attributes)
+      +inner()
+  else
+    div.speaker&attributes(attributes)
+      +inner()

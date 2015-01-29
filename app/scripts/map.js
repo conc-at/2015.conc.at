@@ -135,12 +135,12 @@ $(function() {
           new google.maps.LatLng(53.5653, 10.0014),
           sbg
         ]
-      // }, {
-      //   path: [
-      //     // San Jose, CR
-      //     new google.maps.LatLng(9.6000, -83.9500),
-      //     sbg
-      //   ]
+      }, {
+        path: [
+          // San Jose, CR
+          new google.maps.LatLng(9.6000, -83.9500),
+          sbg
+        ]
       }
     ]
 
