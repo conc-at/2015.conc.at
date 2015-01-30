@@ -37,13 +37,15 @@ $(function() {
     })
 
     var infowindow = new google.maps.InfoWindow({
-      content: '<h2 class="section-heading">Our amazing venue</h2>' +
+      content: '<div class="markerPopup">' +
+        '<h2 class="section-heading">Our amazing venue</h2>' +
         '<h3 class="section-subheading text-muted">' +
           uni +
           ' <a href="https://www.google.com/maps/place/Fachhochschule+Salzburg/" title="Open in Google Maps">' +
             '<i class="fa fa-external-link"></i>' +
           '</a>' +
-        '</h3>'
+        '</h3>' +
+        '</div>'
     })
 
     infowindow.open(map, marker)
