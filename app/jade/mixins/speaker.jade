@@ -17,6 +17,7 @@ mixin speaker(name, talk, href, twitter)
       p= talk
 
   - var thumb = name.toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(' ','_')
+  - attributes.class = (attributes.class || '') + ' col-md-4 col-sm-6'
   if href
     a.speaker(href=href, data-toggle='modal')&attributes(attributes)
       +inner()
