@@ -206,7 +206,6 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             'CNAME',
-            '.htaccess',
             '.nojekyll',
             'google*.html',
             'favicons/**/*.*',
@@ -301,6 +300,7 @@ module.exports = function (grunt) {
           /.out/,
           /tito/,
           /#map/,
+          /\.markerPopup/,
           /modal/,
           /footer/,
           /sponsor/,
