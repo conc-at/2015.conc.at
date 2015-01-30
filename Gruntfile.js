@@ -1,19 +1,19 @@
 module.exports = function (grunt) {
-  'use strict';
+  'use strict'
 
-  var fs = require('fs');
-  var marked = require('marked');
+  var fs = require('fs')
+  var markdown = require('markdown').markdown
 
   // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt)
 
   // Time how long tasks take. Can help when optimizing build times
-  require('time-grunt')(grunt);
+  require('time-grunt')(grunt)
 
   var config = {
     app: 'app',
     dist: 'dist'
-  };
+  }
 
   grunt.initConfig({
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
               connect.static('.tmp'),
               connect().use('/node_modules', connect.static('./node_modules')),
               connect.static(config.app)
-            ];
+            ]
           }
         }
       },
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= config.app %>/scripts/**/*.js',
-        '!<%= config.app %>/scripts/vendor/*',
+        '!<%= config.app %>/scripts/vendor/*'
       ]
     },
 
@@ -125,7 +125,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/images/**/*.*',
             '!<%= config.dist %>/images/**/*@2x.*',
             '<%= config.dist %>/fonts/**/*.*',
-            '<%= config.dist %>/*.{ico,png}',
+            '<%= config.dist %>/*.{ico,png}'
           ]
         }
       }
@@ -144,9 +144,9 @@ module.exports = function (grunt) {
         blockReplacements: {
           js: function (block) {
             if (block.dest === 'scripts/main.js') {
-              return '<script async src="' + block.dest + '"><\/script>';
+              return '<script async src="' + block.dest + '"><\/script>'
             }
-            return '<script src="' + block.dest + '"><\/script>';
+            return '<script src="' + block.dest + '"><\/script>'
           }
         }
       },
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
         pretty: true,
         data: {
           dynamicmd: function(path) {
-            return marked(fs.readFileSync(path.trim())+'');
+            return markdown.toHTML(fs.readFileSync(path.trim()) + '')
           }
         }
       },
@@ -278,7 +278,7 @@ module.exports = function (grunt) {
       options: {
         basePath: '<%= config.dist %>',
         preferOnline: true,
-        verbose: false,
+        verbose: false
       },
       dist: {
         src: [
@@ -340,12 +340,11 @@ module.exports = function (grunt) {
         }]
       }
     }
-  });
-
+  })
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+      return grunt.task.run(['build', 'connect:dist:keepalive'])
     }
 
     grunt.task.run([
@@ -354,8 +353,8 @@ module.exports = function (grunt) {
       'autoprefixer',
       'connect:livereload',
       'watch'
-    ]);
-  });
+    ])
+  })
 
   grunt.registerTask('build', [
     'clean:dist',
@@ -374,10 +373,10 @@ module.exports = function (grunt) {
     'jsonmin',
     'sitemap'
     // 'manifest'
-  ]);
+  ])
 
   grunt.registerTask('default', [
     'newer:jshint',
     'build'
-  ]);
-};
+  ])
+}
