@@ -1,14 +1,15 @@
 // Map
-/*global google:false */
+/* global google */
+/* global $ */
 $(function() {
-  var rAF = (function(){
+  var rAF = (function() {
     return  window.requestAnimationFrame ||
       window.webkitRequestAnimationFrame ||
       window.mozRequestAnimationFrame ||
-      function(callback){
-        window.setTimeout(callback, 1000 / 60);
-      };
-  })();
+      function(callback) {
+        window.setTimeout(callback, 1000 / 60)
+      }
+  })()
 
   var map
   var $map = $('#map')
@@ -146,7 +147,7 @@ $(function() {
       }
     ]
 
-    var paths = [];
+    var paths = []
 
     flights.forEach(function(flight) {
       var flightPath = new google.maps.Polyline({
@@ -176,39 +177,39 @@ $(function() {
         strokeColor: '#c50202',
         strokeOpacity: 1.0,
         strokeWeight: 0
-      });
+      })
 
-      flightPath.setMap(map);
+      flightPath.setMap(map)
 
-      paths.push(flightPath);
+      paths.push(flightPath)
     })
 
-    var count = 0;
-    var path = 0;
+    var count = 0
+    var path = 0
 
-    function animatePlanes() {
-      count++;
+    function animatePlanes () {
+      count++
 
       if (count > 200) {
-        count = 0;
-        path++;
-        if (path === paths.length) return;
+        count = 0
+        path++
+        if (path === paths.length) return
       }
 
-      var icons = paths[path].get('icons');
-      icons[0].offset = (count / 2) + '%';
+      var icons = paths[path].get('icons')
+      icons[0].offset = (count / 2) + '%'
       if (count === 200) {
-        icons[0].icon.fillOpacity = 0;
-        icons[0].icon.strokeWeight = 0;
-        paths[path].strokeWeight = 1;
+        icons[0].icon.fillOpacity = 0
+        icons[0].icon.strokeWeight = 0
+        paths[path].strokeWeight = 1
       } else {
-        icons[0].icon.fillOpacity = 1;
-        icons[0].icon.strokeWeight = 1;
+        icons[0].icon.fillOpacity = 1
+        icons[0].icon.strokeWeight = 1
       }
 
-      paths[path].set('icons', icons);
+      paths[path].set('icons', icons)
 
-      rAF(animatePlanes);
+      rAF(animatePlanes)
     }
 
     animatePlanes()
@@ -217,7 +218,7 @@ $(function() {
   $('body').on('mousedown', function(event) {
     var insideMap = $(event.target).parents('#map').length > 0
 
-    if(!insideMap) {
+    if (!insideMap) {
       setScroll(false)
     }
   })
@@ -227,8 +228,8 @@ $(function() {
   })
 
   if (window.__loadedMap) {
-    window.__initializeMap = function() {};
-    return initialize();
+    window.__initializeMap = function() {}
+    return initialize()
   }
-  window.__initializeMap = initialize;
+  window.__initializeMap = initialize
 })
