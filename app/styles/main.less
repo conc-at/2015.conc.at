@@ -478,6 +478,45 @@ section {
   }
 }
 
+.rating {
+  display: block;
+  float: none !important;
+}
+
+.list-group-item { overflow: hidden; }
+
+.list-group-link,
+.list-group-link-addition { display: block; }
+
+.list-group-link-addition { line-height: 1.769230769; }
+
+@media (min-width: 400px) {
+  .rating { float: right !important; }
+
+  .list-group-link,
+  .list-group-link-addition {
+    float: left;
+  }
+
+  .list-group-link { margin-right: 5px; }
+}
+
+@media (min-width: 992px) {
+  .rating { float: none !important; }
+
+  .list-group-link,
+  .list-group-link-addition { float: none; }
+
+  .with-addition { float: left; }
+}
+
+@media (min-width: 1200px) {
+  .list-group-link,
+  .list-group-link-addition { float: left; }
+
+  .rating { float: right !important; }
+}
+
 .sponsor {
   display: block;
   padding: 0;
