@@ -33,4 +33,4 @@ Conference staff will be happy to help participants contact hotel / venue securi
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-We gladly adapted this document from [Reject.JS's code of conduct](http://rejectjs.org/code_of_conduct/). Thank you for reading it, we can't wait to welcome you in Salzburg!
+We gladly adapted this document from [Reject.JS's code of conduct](http://rejectjs.org/code-of-conduct/). Thank you for reading it, we can't wait to welcome you in Salzburg!
