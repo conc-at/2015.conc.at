@@ -1,7 +1,7 @@
 (function() {
   'use strict'
   /* global Waypoint */
-  /* eslint no-new: 0 */
+  /* eslint no-new:0 */
   var tloaded = false
   new Waypoint({
     element: document.querySelector('#talks'),
