@@ -1,4 +1,4 @@
-mixin speaker(name, talk, href, twitter)
+mixin speaker(name, talk, href, twitter, slug)
   mixin inner()
     img(
       src='images/speakers/#{thumb}_thumb.jpg',
@@ -19,7 +19,7 @@ mixin speaker(name, talk, href, twitter)
   - var thumb = name.toLowerCase().replace(/[^a-zA-Z ]/g, '').replace(' ','_')
   - attributes.class = (attributes.class || '') + ' col-md-4 col-sm-6'
   if href
-    a.speaker(href=href, data-toggle='modal')&attributes(attributes)
+    a.speaker(href=href, data-toggle='modal', data-slug=slug)&attributes(attributes)
       +inner()
   else
     div.speaker&attributes(attributes)
