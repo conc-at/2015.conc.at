@@ -34,18 +34,19 @@ section#tickets
         h4.service-heading Regular Tickets
         p.text-muted
           | One full day of knowledge, fun and hanging out with old and new friends. That's our regular ticket. 
-        tito-button(event='concat/2015', releases='qfdzoqm8zrw')
+        button.btn.btn-xl.disabled
           | 175€ + VAT
+          span.badge Sold Out
       .ticket-info.col-md-3.col-sm-6
         span.fa-stack.fa-4x
           i.fa.fa-circle.fa-stack-2x.text-4
           i.fa.fa-gift.fa-stack-1x.fa-inverse
         h4.service-heading Diversity Tickets
         p.text-muted
-          | Free tickets for underrepresented groups in tech. Would you like to attend the conference but cannot afford the ticket? (#{''}
-          a(href='http://conc-at.tumblr.com/post/107499311229/diversity-tickets') sponsor this
-          | )
-        a(href='https://docs.google.com/forms/d/1GPEnqzwiLMppOF51CHKg8_JT9m-Io3_3yudgoMOc6BE/').btn.btn-xl Apply
+          | Free tickets for underrepresented groups in tech. Would you like to attend the conference but cannot afford the ticket?
+        button.btn.btn-xl.disabled
+          | Apply Now
+          span.badge None Left
     .row#travel
       include ./party
       include ./travel
