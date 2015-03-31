@@ -24,13 +24,11 @@ In case you can’t find a staff member or want to contact us via email or phone
 | :-------- | :-
 | Twitter   | [@boennemann](https://twitter.com/boennemann)
 | Email     | [stephan@boennemann.me](mailto:stephan@boennemann.me)
-| Phone(DE) | [+4915142318681](tel:004915142318681)
 
 | Contact   | Theresa Walenta
 | :-------- | :-
 | Twitter   | [@thezereza](https://twitter.com/thezereza)
 | Email     | [theresa.walenta@googlemail.com](mailto:theresa.walenta@googlemail.com)
-| Phone(DE) | [+4915775216594](tel:004915775216594)
 
 <br>
 
