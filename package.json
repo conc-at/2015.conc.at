@@ -37,6 +37,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "build": "grunt",
     "test": "standard && grunt build",
     "start": "grunt serve:dist"
   },
