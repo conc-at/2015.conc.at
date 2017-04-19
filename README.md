@@ -1,5 +1,5 @@
 # [conc.at](https://conc.at/)
-[![Build Status](https://jenkins.dovigo.org/buildStatus/icon?job=concat)](https://jenkins.dovigo.org/job/concat/)
+[![Build Status](https://jenkins.dovigo.org/buildStatus/icon?job=2015.conc.at)](https://jenkins.dovigo.org/view/concat/job/2015.conc.at/)
 [![Dependency Status](https://david-dm.org/conc-at/conc.at.svg)](https://david-dm.org/conc-at/conc.at)
 [![devDependency Status](https://david-dm.org/conc-at/conc.at/dev-status.svg)](https://david-dm.org/conc-at/conc.at#info=devDependencies)
 
