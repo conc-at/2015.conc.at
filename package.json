@@ -25,7 +25,7 @@
     "grunt-rev": "^0.1.0",
     "grunt-sitemap": "^1.1.0",
     "grunt-svgmin": "^4.0.0",
-    "grunt-uncss": "^0.6.1",
+    "grunt-uncss": "^0.7.0",
     "grunt-usemin": "^3.0.0",
     "headroom.js": "^0.9.3",
     "jshint-stylish": "^2.2.1",
