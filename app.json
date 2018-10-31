@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "predeploy": "npm run build"
+    "dokku": {
+      "predeploy": "npm run build"
+    }
   }
 }
 
