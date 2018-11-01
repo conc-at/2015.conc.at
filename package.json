@@ -32,7 +32,7 @@
     "load-grunt-tasks": "^4.0.0",
     "markdown": "^0.5.0",
     "standard": "*",
-    "time-grunt": "^1.0.0"
+    "time-grunt": "^2.0.0"
   },
   "engines": {
     "node": "=10.0.0"
